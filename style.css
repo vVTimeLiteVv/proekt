@@ -1,0 +1,33 @@
+.Hero{
+    display: grid;
+    grid-template-rows: 20% 1fr 368px 1fr 20%;
+    grid-template-columns: auto repeat(2, 75px) auto;
+}
+
+.Hero img{
+    grid-row: 2 / 4;
+    grid-column: 1 / 4;
+    order: 1;
+}
+
+.Hero_block{
+    background-color: rgba(24, 24, 35, 1);
+    grid-row: 1 / span 5;
+    grid-column: 2 / span 3;
+    order: 0;
+}
+
+.Hero_text{
+    grid-row: 3 / span 1;
+    grid-column: 3 / span 2;
+    order: 2;
+    margin-bottom: 32px;
+}
+
+.Hero_text h1{
+    font-size: 78px;
+}
+
+h1 span{
+    opacity: 0.5;
+}
